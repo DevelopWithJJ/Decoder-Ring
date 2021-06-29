@@ -60,7 +60,7 @@ const polybiusModule = (function () {
       //Helper function that encodes the input of a user
       function _encode(input) {
         //Spread the indexes of our input into an array
-        let encoder = [...input]
+        let encoder = [...input.toLowerCase()]
         //Use reduce so that our accumulator holds the letters within our array
           return encoder.reduce((acc, letter) => {
             //CHeck to see if the inputs match the letters in our alphabet array
